@@ -209,7 +209,7 @@ namespace CarritoQuinto.Web.WebForms.Administracion.Producto
                     {
                         try
                         {
-                            if (fuImagenProducto.PostedFile.ContentType == "image/png" || fuImagenProducto.PostedFile.ContentType == "image/jpg")
+                            if (fuImagenProducto.PostedFile.ContentType == "image/png" || fuImagenProducto.PostedFile.ContentType == "image/jpg" || fuImagenProducto.PostedFile.ContentType == "image/jpeg")
                             {
                                 if (fuImagenProducto.PostedFile.ContentLength < 100000)
                                 {
