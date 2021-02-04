@@ -229,6 +229,7 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="images\carrito.png" />
+    <Content Include="images\carrito2.png" />
     <Content Include="images\comprar2.png" />
     <Content Include="images\iconcomprar.png" />
     <Content Include="images\icon_buscar.png" />
@@ -242,6 +243,7 @@
     <Content Include="WebForms\Administracion\Producto\wfmProductoNuevo.aspx" />
     <Content Include="WebForms\Login\wfmLogin.aspx" />
     <Content Include="WebForms\Public\wfmCatalogo.aspx" />
+    <Content Include="WebForms\Public\wfmDetalleProducto.aspx" />
     <Content Include="wfmPrueba.aspx" />
     <Content Include="xtreme-html\ltr\error-404.html" />
     <Content Include="xtreme-html\ltr\icon-material.html" />
@@ -457,6 +459,7 @@
     <Compile Include="Logica\logcaCategoria.cs" />
     <Compile Include="Logica\logicaProducto.cs" />
     <Compile Include="Logica\logicaUsuario.cs" />
+    <Compile Include="Logica\objetos\clsCarrito.cs" />
     <Compile Include="Models\ModelCarrito.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -564,6 +567,13 @@
     </Compile>
     <Compile Include="WebForms\Public\wfmCatalogo.aspx.designer.cs">
       <DependentUpon>wfmCatalogo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\Public\wfmDetalleProducto.aspx.cs">
+      <DependentUpon>wfmDetalleProducto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\Public\wfmDetalleProducto.aspx.designer.cs">
+      <DependentUpon>wfmDetalleProducto.aspx</DependentUpon>
     </Compile>
     <Compile Include="wfmPrueba.aspx.cs">
       <DependentUpon>wfmPrueba.aspx</DependentUpon>

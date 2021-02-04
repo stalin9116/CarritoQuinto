@@ -1,0 +1,50 @@
+﻿@model CarritoQuinto.BackEnd.Models.TBL_CATEGORIA
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>TBL_CATEGORIA</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.cat_nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cat_nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.cat_descripcion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cat_descripcion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.cat_status)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cat_status)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.cat_fechacreacion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cat_fechacreacion)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.cat_id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

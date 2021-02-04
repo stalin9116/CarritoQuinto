@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="af2be19e8ee44a699b69eca0958bd084" Name="Diagram1">
+        <EntityTypeShape EntityType="BDDCARRITO2Model.sysdiagrams" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDDCARRITO2Model.TBL_CATEGORIA" Width="1.5" PointX="0.75" PointY="12.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDDCARRITO2Model.TBL_CLIENTE" Width="1.5" PointX="0.75" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDDCARRITO2Model.TBL_DETALLEIMPUESTOS" Width="1.5" PointX="10.5" PointY="7.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDDCARRITO2Model.TBL_DETALLEPEDIDO" Width="1.5" PointX="5.25" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDDCARRITO2Model.TBL_DIRECCIONES" Width="1.5" PointX="3" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDDCARRITO2Model.TBL_FORMAPAGO" Width="1.5" PointX="6" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDDCARRITO2Model.TBL_IMPUESTOS" Width="1.5" PointX="8.25" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDDCARRITO2Model.TBL_PAGOS" Width="1.5" PointX="8.25" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDDCARRITO2Model.TBL_PEDIDO" Width="1.5" PointX="3" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDDCARRITO2Model.TBL_PRODUCTO" Width="1.5" PointX="3" PointY="11.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDDCARRITO2Model.TBL_ROL" Width="1.5" PointX="10.75" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDDCARRITO2Model.TBL_USUARIO" Width="1.5" PointX="13" PointY="1" IsExpanded="true" />
+        <AssociationConnector Association="BDDCARRITO2Model.Relationship13" ManuallyRouted="false" />
+        <AssociationConnector Association="BDDCARRITO2Model.Relationship14" ManuallyRouted="false" />
+        <AssociationConnector Association="BDDCARRITO2Model.Relationship15" ManuallyRouted="false" />
+        <AssociationConnector Association="BDDCARRITO2Model.Relationship10" ManuallyRouted="false" />
+        <AssociationConnector Association="BDDCARRITO2Model.Relationship12" ManuallyRouted="false" />
+        <AssociationConnector Association="BDDCARRITO2Model.Relationship11" ManuallyRouted="false" />
+        <AssociationConnector Association="BDDCARRITO2Model.Relationship8" ManuallyRouted="false" />
+        <AssociationConnector Association="BDDCARRITO2Model.Relationship17" ManuallyRouted="false" />
+        <AssociationConnector Association="BDDCARRITO2Model.Relationship16" ManuallyRouted="false" />
+        <AssociationConnector Association="BDDCARRITO2Model.Relationship1" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

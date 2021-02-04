@@ -1,0 +1,93 @@
+﻿@model IEnumerable<CarritoQuinto.BackEnd.Models.TBL_PRODUCTO>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.pro_codigo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.pro_nombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.pro_preciocompra)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.pro_precioventa)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.pro_imagen)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.pro_descripcion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.pro_stockminimo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.pro_stockmaximo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.pro_fechacreacion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.pro_status)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TBL_CATEGORIA.cat_nombre)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.pro_codigo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.pro_nombre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.pro_preciocompra)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.pro_precioventa)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.pro_imagen)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.pro_descripcion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.pro_stockminimo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.pro_stockmaximo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.pro_fechacreacion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.pro_status)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TBL_CATEGORIA.cat_nombre)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.pro_id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.pro_id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.pro_id })
+        </td>
+    </tr>
+}
+
+</table>

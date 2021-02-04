@@ -52,8 +52,7 @@ namespace CarritoQuinto.Web.WebForms.Public
             if (e.CommandName=="Comprar")
             {
                 //Encriptar URL
-                Response.Redirect("");
-
+                Response.Redirect("wfmDetalleProducto.aspx?cod="+codigo);
             }
         }
     }

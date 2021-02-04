@@ -1,0 +1,112 @@
+﻿@model CarritoQuinto.BackEnd.Models.TBL_PRODUCTO
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>TBL_PRODUCTO</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.pro_codigo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.pro_codigo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.pro_nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.pro_nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.pro_preciocompra)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.pro_preciocompra)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.pro_precioventa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.pro_precioventa)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.pro_imagen)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.pro_imagen)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.pro_descripcion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.pro_descripcion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.pro_stockminimo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.pro_stockminimo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.pro_stockmaximo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.pro_stockmaximo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.pro_fechacreacion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.pro_fechacreacion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.pro_status)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.pro_status)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TBL_CATEGORIA.cat_nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TBL_CATEGORIA.cat_nombre)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>
