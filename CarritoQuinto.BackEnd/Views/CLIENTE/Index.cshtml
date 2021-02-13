@@ -1,0 +1,87 @@
+﻿@model IEnumerable<CarritoQuinto.BackEnd.Models.TBL_CLIENTE>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.cli_tipoidentificacion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.cli_apellidos)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.cli_nombres)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.cli_genero)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.cli_fechanacimiento)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.cli_telefono)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.cli_celurar)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.cli_email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.cli_status)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.cli_fechacreacion)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.cli_tipoidentificacion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.cli_apellidos)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.cli_nombres)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.cli_genero)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.cli_fechanacimiento)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.cli_telefono)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.cli_celurar)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.cli_email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.cli_status)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.cli_fechacreacion)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+        </td>
+    </tr>
+}
+
+</table>

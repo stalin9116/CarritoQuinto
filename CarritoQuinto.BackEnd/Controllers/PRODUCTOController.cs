@@ -11,11 +11,14 @@ using CarritoQuinto.BackEnd.Models;
 
 namespace CarritoQuinto.BackEnd.Controllers
 {
+    
     public class PRODUCTOController : Controller
     {
         private BDDCARRITO2Entities db = new BDDCARRITO2Entities();
 
         // GET: PRODUCTO
+
+        [Authorize(Roles = "Admin, Asistente")]
         public async Task<ActionResult> Index()
         {
             var tBL_PRODUCTO = db.TBL_PRODUCTO.Include(t => t.TBL_CATEGORIA);
@@ -23,6 +26,7 @@ namespace CarritoQuinto.BackEnd.Controllers
         }
 
         // GET: PRODUCTO/Details/5
+        [Authorize(Roles = "Admin, Asistente")]
         public async Task<ActionResult> Details(int? id)
         {
             if (id == null)
@@ -38,6 +42,7 @@ namespace CarritoQuinto.BackEnd.Controllers
         }
 
         // GET: PRODUCTO/Create
+        [Authorize(Roles = "Admin")]
         public ActionResult Create()
         {
             ViewBag.cat_id = new SelectList(db.TBL_CATEGORIA, "cat_id", "cat_nombre");
@@ -63,6 +68,7 @@ namespace CarritoQuinto.BackEnd.Controllers
         }
 
         // GET: PRODUCTO/Edit/5
+        [Authorize(Roles = "Admin")]
         public async Task<ActionResult> Edit(int? id)
         {
             if (id == null)
@@ -96,6 +102,7 @@ namespace CarritoQuinto.BackEnd.Controllers
         }
 
         // GET: PRODUCTO/Delete/5
+        [Authorize(Roles = "Admin")]
         public async Task<ActionResult> Delete(int? id)
         {
             if (id == null)

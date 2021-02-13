@@ -1,0 +1,98 @@
+﻿@model CarritoQuinto.BackEnd.Models.TBL_CLIENTE
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>TBL_CLIENTE</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.cli_tipoidentificacion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cli_tipoidentificacion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.cli_apellidos)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cli_apellidos)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.cli_nombres)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cli_nombres)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.cli_genero)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cli_genero)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.cli_fechanacimiento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cli_fechanacimiento)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.cli_telefono)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cli_telefono)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.cli_celurar)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cli_celurar)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.cli_email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cli_email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.cli_status)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cli_status)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.cli_fechacreacion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cli_fechacreacion)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
